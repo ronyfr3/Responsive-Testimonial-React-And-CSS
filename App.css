@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins","sans-serif";
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-color: rgb(204, 206, 206);
+}
+.wrapper{
+   max-width: 1200px;
+   padding: 0 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+}
+.wrapper .box{
+    background: #fff;
+    border-radius: 3px;
+    padding:25px;
+    width: calc(33% - 10px);
+}
+.wrapper .content{
+ padding-top: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+p{
+    font-size:17px;
+    color: rgb(110, 108, 108);
+}
+.job{
+   font-size:15px;
+   font-weight:600;
+   color: green;
+}
+.name{
+    font-size:15px;
+    font-weight:600;
+    color: rgb(28, 61, 28);
+}
+.image{
+    height: 75px;
+    width: 75px;
+    padding: 3px;
+    background: rgb(0, 225, 255);
+    border-radius:50%;
+}
+.image img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ border-radius:50%;
+ border: 2px solid rgb(252, 251, 251);
+}
+@media (max-width: 960px){
+ .box{
+     flex:100%;
+     max-width: 80%;
+ }
+}
+@media (max-width: 1200px){
+ .box{
+     width: calc(33% -10px);
+     margin: 15px auto;
+ }
+}
+@media (max-width: 640px){
+ .box{
+     flex:100%;
+     max-width: 100%;
+     margin-top: 15px;
+ }
+}
